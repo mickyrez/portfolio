@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio of Michael Gutierrez</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" media="only screen and (min-device-width:300px) and (max-device-width: 650px)" href="css/mobile.css" type="text/css" />
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
+	
+	<style>
+    @font-face {
+    font-family: 'IconMoon';
+    src: url('fonts/icomoon.eot');
+    src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+         url('fonts/icomoon.woff') format('woff'),
+         url('fonts/icomoon.ttf') format('truetype'),
+         url('fonts/icomoon.svg#IconMoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+    li {
+      list-style-type: none;
+    }
+    [data-icon]:before {
+      font-family: 'IconMoon';
+      content: attr(data-icon);
+      speak: none;
+    }
+    </style>
+
+	
+
+
+</head>
+<body>
+<div class="wrap">
+
+ 	<div id="banner">
+		<div id="banner-text">
+			<span id="banner-font">Hello,</span><br>
+			<span>My name is Michael Gutierrez and I'm a Web Developer.</span>
+		</div>
+	 	<div id="logo"><img src="images/face1.png" /></div>
+	</div>
+	<div id="nav">
+	<nav role="full-horizontal">
+ 		<ul id="links">
+ 			<li><a href="index.html">Home</a></li>
+ 			<li><a href="bio.html">Bio</a></li>
+ 			<li><a href="previous_work.html">Previous Work</a></li>
+ 			 <li><a href="blog.html">Blog</a></li>
+ 			<li><a href="contact.html">Contact</a></li>
+		</ul>
+			<div id="social">
+			<ul id="social">
+				<a href="" class="icon-alone">
+					<li>
+						<span data-icon="&#xe600;"></span>
+					</li>
+				</a>
+				<a href="" class="icon-alone">
+					<li>
+						<span aria-hidden="true" data-icon="&#xe601;"></span>
+					</li>
+				</a>
+				<a href="" class="icon-alone">
+					<li>
+						<span aria-hidden="true" data-icon="&#xe602;"></span>
+					</li>
+				</a>
+				<a href="" class="icon-alone">
+					<li>
+						<span aria-hidden="true" data-icon="&#xe604;"></span>
+					</li>
+				</a>
+	 		</ul>
+	 	</div>
+	</nav>
+
+	</div>
+    <div class="content">
+    Here is a slideshow of my previous work, click on an image to open up the website.
+	<div class="cycle-slideshow">
+	    <img src="http://jquery.malsup.com/cycle2/images/p1.jpg">
+	    <img src="http://jquery.malsup.com/cycle2/images/p2.jpg">
+	    <img src="http://jquery.malsup.com/cycle2/images/p3.jpg">
+	    <img src="http://jquery.malsup.com/cycle2/images/p4.jpg">
+	</div>
+
+    </div>
+</div>
+
+<footer class="footer">
+	<p>© 2013 Michael Gutierrez</p>
+	<span class="footer-links"><a href="">Bio</a></span>
+	<span class="footer-links"><a href="">Previous Work</a></span>
+	<span class="footer-links"><a href="">Blog</a></span>
+	<span class="footer-links"><a href="">Contact</a></span>
+</footer>
+
+
+</body>
+</html>

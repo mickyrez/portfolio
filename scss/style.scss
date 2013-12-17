@@ -1,0 +1,222 @@
+$orangeColor: #ffa200;
+$greyColor: #555;
+$linkGrey: #bebebe;
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('fonts/leaguegothic-italic-webfont.eot');
+    src: url('fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'IconMoon';
+	src: url('fonts/icomoon.eot');
+	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/icomoon.woff') format('woff'),
+	     url('fonts/icomoon.ttf') format('truetype'),
+	     url('fonts/icomoon.svg#IconMoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+li 
+{
+	list-style-type: none;
+}
+
+[data-icon]:before {
+  font-family: 'IconMoon';
+  content: attr(data-icon);
+  speak: none;
+}
+
+.icon-alone {
+	color: $linkGrey;
+	font-size: 60px;
+	text-decoration: none;
+	display: inline-block; /* Fix for clickability issue in WebKit */
+	padding: 0px;
+
+}
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+
+}
+body {
+	font-family: 'League Gothic', Fallback, sans-serif;
+	background: #ccc;
+	height: 100%;
+}
+
+
+nav[role="full-horizontal"] {
+    width: 100%;
+    
+
+}
+
+.wrap {
+	min-height: 100%;
+	margin-bottom: -150px;
+}
+
+.wrap:after {
+	content: "";
+	display: block;
+}
+
+.footer, .wrap:after {
+	height: 150px;
+}
+
+.footer {
+	background: $greyColor;
+	text-align: center;
+	
+}
+
+#logo {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+
+}
+#banner {
+	background-color: $orangeColor;
+	width: 100%;
+	height: 240px;
+	color: white;
+	span {
+	width: 100%;
+  	max-width: 400px;
+	margin-top: 550px;
+	font-size: 90px;
+	}
+	span:last-child{
+	//position: absolute;
+	//margin: 140px 10px;
+	font-size: 30px;
+	
+	}
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	padding: 30px;
+}
+
+
+#nav {
+	background-color: $greyColor;
+	width: 100%;
+	height: 70px;
+	color: white;
+
+	ul {
+		float:left;
+		width:100%;
+		padding:0;
+		margin:0;
+		list-style-type:none;
+	}
+
+	a {
+		font-size: 30px;
+		float:left;
+		text-decoration:none;
+		color:white;
+		padding: 0.4em 0.8em;
+	}
+
+	a:hover {
+		color: $orangeColor;
+		background-color: red;
+	}
+
+	li {
+		display:inline;
+		float: left;
+	}
+}
+
+
+#social {
+	position: relative;
+	top: -28px;
+	height: 65px;
+	float: right;
+	text-align: center;
+
+	li {
+	display: inline;
+	}
+	a {
+	font-size: 50px;
+	padding: 7px;
+	}
+}
+
+
+/* small screens 
+@media screen and (max-width: 44em) {
+  body {
+    #banner {
+	    span {
+		font-size: 40px;
+		}
+		span:last-child{
+		font-size: 20px;
+	    }
+	}
+	#banner-text {
+	max-width: 50%;
+	}
+	#social {
+	width: 100%;
+	top: 0px;
+	}   
+  }
+
+    
+  nav[role="full-horizontal"] {
+    ul {
+      padding:0 .5em;    
+	 	li {
+	      width:100%;
+	      padding:.45em .25em;
+	      margin:0 0 .0955em 0;
+	      background-color: $greyColor;
+	    }
+	}
+	  #social {
+	  background-color: $greyColor;
+		  ul {
+		  	text-align: center;
+		  	li {
+			padding: 0px;
+		  	}
+		  }
+	  }
+  }
+
+}
+*/
+
+
+.cycle-slideshow { width: 50%; min-width: 300px; }
+.cycle-slideshow img { width: 100%; height: auto }
